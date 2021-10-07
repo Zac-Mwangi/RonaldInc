@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddRoomActivity"
+    tools:ignore="HardcodedText">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mll"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="32dp"
+            android:hint="Tenant Name">
+            <!--this is the actual edit text which takes the input-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_tenant_name"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:hint="ID Number (optional)">
+
+            <!--this is the actual edit text which takes the input-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/id_number"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:hint="Phone Number (optional)">
+
+            <!--this is the actual edit text which takes the input-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone_number"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:hint="Deposit Amount (optional)">
+
+            <!--this is the actual edit text which takes the input-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/deposit_amount"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/room_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:prompt="@string/app_name"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:outlineSpotShadowColor="@color/colorPrimary"
+            android:background="@drawable/spinner"
+            android:spinnerMode="dropdown"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Add Tenant"
+            android:id="@+id/add_tenant"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"/>
+    </LinearLayout>
+
+</ScrollView>

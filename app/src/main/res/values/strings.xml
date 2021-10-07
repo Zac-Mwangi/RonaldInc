@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Ronald Inc.</string>
+
+    <string name="rooms">Rooms</string>
+    <string name="tenants">Tenants</string>
+    <string name="add_room">Add Rooms</string>
+    <string name="add_tenant">Add Tenant</string>
+    <string name="reports">Rent Collection</string>
+    <string name="rent_payment">Rent Payment</string>
+    <string name="logout">Logout</string>
+    <string name="apartment">Apartment</string>
+    <!--    <string name="report">Report</string>-->
+    <!--    <string name="log">Logout</string>-->
+</resources>
